@@ -1,0 +1,91 @@
+.shop-selector {
+    background: var(--surface-color, #fff);
+    border-radius: 14px;
+    border: 1.5px solid var(--border-color, #e2e8f0);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.shop-selector-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
+}
+
+.shop-selector-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.shop-create-btn {
+    background: var(--primary-color, #2563eb);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.4rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+
+.shop-create-btn:hover {
+    background: #1d4ed8;
+}
+
+.shop-selector-empty {
+    text-align: center;
+    padding: 1rem 0;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+.shop-selector-empty p {
+    margin: 0 0 0.75rem;
+}
+
+.shop-chips {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.shop-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background: rgba(37, 99, 235, 0.04);
+    border: 1.5px solid var(--border-color, #e2e8f0);
+    border-radius: 10px;
+    padding: 0.55rem 0.85rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: inherit;
+    min-width: 140px;
+}
+
+.shop-chip:hover {
+    border-color: var(--primary-color, #2563eb);
+    background: rgba(37, 99, 235, 0.08);
+}
+
+.shop-chip.active {
+    border-color: var(--primary-color, #2563eb);
+    background: rgba(37, 99, 235, 0.12);
+    box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.18);
+}
+
+.shop-chip-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.shop-chip-address {
+    font-size: 0.72rem;
+    color: #64748b;
+    margin-top: 0.1rem;
+}

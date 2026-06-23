@@ -1,0 +1,565 @@
+/* ─── Shared Dashboard Styles ─── */
+
+.dashboard-page {
+    min-height: calc(100vh - 64px);
+    background: var(--background-color);
+    padding: 2rem 0 4rem;
+}
+
+/* Top welcome strip */
+.dashboard-header {
+    margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.25rem;
+}
+
+.dashboard-header p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* ─── Stat Cards Row ─── */
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+}
+
+.stat-card {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.stat-icon {
+    font-size: 1.4rem;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.stat-value {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+    line-height: 1;
+}
+
+.stat-sub {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
+/* ─── Grid Layout ─── */
+.dashboard-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.dashboard-grid.two-col {
+    grid-template-columns: 1fr 1fr;
+}
+
+.dashboard-grid.sidebar {
+    grid-template-columns: 1fr 320px;
+}
+
+/* ─── Panel / Card ─── */
+.dash-panel {
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    padding: 1.5rem;
+}
+
+.dash-panel-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.25rem;
+}
+
+.dash-panel-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dash-panel-link {
+    font-size: 0.8rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* ─── Empty State ─── */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 2.5rem 1rem;
+    text-align: center;
+}
+
+.empty-state-icon {
+    font-size: 2.5rem;
+    opacity: 0.4;
+}
+
+.empty-state-text {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin: 0;
+}
+
+/* ─── Action Button ─── */
+.dash-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.55rem 1.1rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: all 0.18s;
+    text-decoration: none;
+}
+
+.dash-btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dash-btn-primary:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+}
+
+.dash-btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 1.5px solid var(--border-color);
+}
+
+.dash-btn-outline:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.04);
+}
+
+/* ─── Quick Action Items ─── */
+.quick-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.quick-action-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.9rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--border-color);
+    background: var(--background-color);
+    cursor: pointer;
+    transition: all 0.18s;
+    text-align: left;
+    font-family: inherit;
+    width: 100%;
+}
+
+.quick-action-item:hover {
+    border-color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.03);
+    transform: translateX(2px);
+}
+
+.quick-action-icon {
+    font-size: 1.4rem;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: rgba(37, 99, 235, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quick-action-text strong {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 0.1rem;
+}
+
+.quick-action-text span {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+}
+
+.quick-action-arrow {
+    margin-left: auto;
+    color: var(--border-color);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+}
+
+/* ─── Search Bar ─── */
+.search-bar-wrapper {
+    position: relative;
+    margin-bottom: 1.25rem;
+}
+
+.search-bar-icon {
+    position: absolute;
+    left: 0.9rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+    pointer-events: none;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 0.7rem 0.9rem 0.7rem 2.5rem;
+    border: 1.5px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    background: var(--background-color);
+    color: var(--text-primary);
+    transition: border-color 0.2s;
+    box-sizing: border-box;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: var(--surface-color);
+}
+
+.search-bar::placeholder {
+    color: #94a3b8;
+}
+
+/* ─── Barcode Placeholder ─── */
+.barcode-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+    border: 2px dashed var(--border-color);
+    border-radius: 12px;
+    text-align: center;
+    background: repeating-linear-gradient(90deg,
+            transparent,
+            transparent 4px,
+            rgba(37, 99, 235, 0.04) 4px,
+            rgba(37, 99, 235, 0.04) 8px);
+}
+
+.barcode-icon {
+    font-size: 3rem;
+    opacity: 0.5;
+}
+
+.barcode-placeholder p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin: 0;
+    max-width: 220px;
+    line-height: 1.6;
+}
+
+/* ─── Inventory Table ─── */
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.inventory-table th {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-secondary);
+    padding: 0.5rem 0.75rem;
+    border-bottom: 1px solid var(--border-color);
+    text-align: left;
+}
+
+.inventory-table td {
+    padding: 0.75rem;
+    font-size: 0.875rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.inventory-table tr:last-child td {
+    border-bottom: none;
+}
+
+.stock-badge {
+    display: inline-block;
+    padding: 0.2rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+
+.stock-ok {
+    background: rgba(16, 185, 129, 0.1);
+    color: #059669;
+}
+
+.stock-low {
+    background: rgba(245, 158, 11, 0.1);
+    color: #d97706;
+}
+
+.stock-out {
+    background: rgba(239, 68, 68, 0.1);
+    color: #dc2626;
+}
+
+.category-badge {
+    display: inline-block;
+    padding: 0.15rem 0.5rem;
+    border-radius: 6px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--primary-color, #2563eb);
+    white-space: nowrap;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 0.25rem;
+    border-radius: 6px;
+    transition: background 0.15s;
+}
+
+.delete-btn:hover:not(:disabled) {
+    background: rgba(239, 68, 68, 0.1);
+}
+
+.delete-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ─── Cart Items in Dashboard ─── */
+.cart-items-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-name {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.cart-item-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cart-qty-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border-color);
+    background: var(--background-color);
+    color: var(--text-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.15s;
+    padding: 0;
+}
+
+.cart-qty-btn:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    background: rgba(37, 99, 235, 0.04);
+}
+
+.cart-item-qty {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    min-width: 20px;
+    text-align: center;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 900px) {
+    .dashboard-grid.sidebar {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .dashboard-grid.two-col {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-page {
+        padding: 1.25rem 0 3rem;
+    }
+
+    .dashboard-header h1 {
+        font-size: 1.35rem;
+    }
+
+    .stat-value {
+        font-size: 1.5rem;
+    }
+
+    .dash-panel {
+        padding: 1.25rem;
+    }
+}
+
+/* ─── Location Bar ─── */
+.location-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--surface-color, #fff);
+    border: 1.5px solid var(--border-color, #e2e8f0);
+    border-radius: 12px;
+    padding: 0.65rem 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.location-bar-info {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.location-bar-icon {
+    font-size: 1.1rem;
+}
+
+.location-bar-text {
+    font-size: 0.88rem;
+    color: var(--text-secondary, #475569);
+}
+
+.location-bar-btn {
+    background: var(--primary-color, #2563eb);
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.35rem 0.85rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.15s;
+}
+
+.location-bar-btn:hover {
+    background: #1d4ed8;
+}
+
+/* ─── Nearby Shops ─── */
+.nearby-shops-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nearby-shop-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.65rem 0.85rem;
+    background: rgba(37, 99, 235, 0.03);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 10px;
+    transition: border-color 0.15s;
+}
+
+.nearby-shop-item:hover {
+    border-color: var(--primary-color, #2563eb);
+}
+
+.nearby-shop-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.nearby-shop-name {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.nearby-shop-address {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin-top: 0.1rem;
+}
+
+.nearby-shop-distance {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--primary-color, #2563eb);
+    white-space: nowrap;
+}

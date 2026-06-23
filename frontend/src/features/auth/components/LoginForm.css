@@ -1,0 +1,80 @@
+/* ─── LoginForm.css ─── */
+
+/* Error banner */
+.auth-error {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 0.7rem 0.9rem;
+    font-size: 0.875rem;
+    color: #b91c1c;
+    text-align: left;
+    animation: errorIn 0.2s ease;
+}
+
+@keyframes errorIn {
+    from {
+        opacity: 0;
+        transform: translateY(-4px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-error-icon {
+    flex-shrink: 0;
+    font-size: 1rem;
+    margin-top: 1px;
+}
+
+/* Button loading state */
+.auth-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+.auth-btn-inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+/* Spinner */
+.auth-spinner {
+    width: 16px;
+    height: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    border-top-color: #fff;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+    flex-shrink: 0;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Role toggle full-width on login page */
+.role-toggle-full {
+    display: flex;
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 4px;
+    width: 100%;
+}
+
+.role-toggle-full .role-btn {
+    flex: 1;
+    text-align: center;
+}
