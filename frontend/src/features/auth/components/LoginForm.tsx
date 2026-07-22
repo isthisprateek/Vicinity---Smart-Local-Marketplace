@@ -67,9 +67,9 @@ export function LoginForm() {
         <div className="auth-page">
             <div className="auth-card">
                 {/* Logo */}
-                <div className="auth-logo">SM</div>
+                <div className="auth-logo">V</div>
                 <h1 className="auth-title">Welcome back</h1>
-                <p className="auth-subtitle">Sign in to your Smart Marketplace account</p>
+                <p className="auth-subtitle">Sign in to your Vicinity account</p>
 
                 {/* Role selector */}
                 <div className="role-toggle role-toggle-full" role="group" aria-label="Choose your role">

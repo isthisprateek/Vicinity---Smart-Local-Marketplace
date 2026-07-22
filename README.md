@@ -1,8 +1,8 @@
-# Vicinity - Smart Local Marketplace
+# Smart Market - Smart Local Marketplace
 
-Vicinity is an intelligent hyper-local marketplace that bridges the gap between buyers and city-wide local sellers. By incorporating Natural Language query processing and Neo4j Graph Database logic, it parses arbitrary intents like "I have a headache" into fully populated cart recommendations spanning optimal local sellers.
+Smart Market is an intelligent hyper-local marketplace that bridges the gap between buyers and city-wide local sellers. By incorporating Natural Language query processing and Neo4j Graph Database logic, it parses arbitrary intents like "I have a headache" into fully populated cart recommendations spanning optimal local sellers.
 
-## �[ Key Features
+##  Key Features
 
 - **Smart Search Intents:** Search by symptom or need (e.g. "fever") — the backend evaluates intent and sources a curative bundle of relevant products.
 - **Live Delivery Tracking:** Real-time map visualization showing the complete route from seller to buyer with animated delivery progress.

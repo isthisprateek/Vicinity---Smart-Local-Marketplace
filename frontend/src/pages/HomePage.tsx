@@ -118,7 +118,7 @@ function AISimulator() {
                 <div className="sim-dot red" />
                 <div className="sim-dot yellow" />
                 <div className="sim-dot green" />
-                <span className="sim-titlebar-label">Smart Market AI · Live Demo</span>
+                <span className="sim-titlebar-label">Vicinity AI · Live Demo</span>
             </div>
             <div className="sim-body">
                 {/* User message */}
@@ -197,7 +197,7 @@ export function HomePage() {
 
             {/* Nav */}
             <nav className="home-nav">
-                <span className="nav-logo">Smart<span>Market</span></span>
+                <span className="nav-logo">Vi<span>cinity</span></span>
                 <div className="nav-links">
                     <a href="#features" className="nav-link">Features</a>
                     <a href="#how" className="nav-link">How It Works</a>
@@ -217,7 +217,7 @@ export function HomePage() {
                     <span className="line-glow">understood by AI.</span>
                 </h1>
                 <p className="hero-sub">
-                    Stop searching item-by-item. Just say what you need and Smart Market
+                    Stop searching item-by-item. Just say what you need and Vicinity
                     builds your cart from local sellers — in seconds.
                 </p>
                 <div className="hero-btns">
@@ -248,7 +248,7 @@ export function HomePage() {
                 <span className="section-label">Live Demo</span>
                 <h2 className="section-title">Watch the AI work its magic</h2>
                 <p className="section-sub">
-                    Type any goal and watch Smart Market assemble the perfect cart
+                    Type any goal and watch Vicinity assemble the perfect cart
                     from local sellers near you — automatically.
                 </p>
                 <AISimulator />

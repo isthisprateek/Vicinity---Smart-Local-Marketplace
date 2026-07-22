@@ -26,3 +26,6 @@ frontend/stats.html
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+antigravity-prompt-vicinity.md
+docs/

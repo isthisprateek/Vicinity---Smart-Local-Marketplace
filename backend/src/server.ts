@@ -1,3 +1,4 @@
+import 'dotenv/config'; // ← MUST be first — loads .env before any other module reads process.env
 import app from './app';
 import { connectDB } from './config/db';
 import { initNeo4jDriver, closeNeo4jDriver } from './graph/neo4j';

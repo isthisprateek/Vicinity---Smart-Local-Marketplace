@@ -38,7 +38,7 @@ export const handleRecipeChat = async (req: Request, res: Response): Promise<voi
     try {
         const genAI = getGenAI();
         const model = genAI.getGenerativeModel({
-            model: "gemini-2.5-flash",
+            model: "gemini-flash-latest",
             // Use structured output capabilities
             generationConfig: {
                 responseMimeType: "application/json",

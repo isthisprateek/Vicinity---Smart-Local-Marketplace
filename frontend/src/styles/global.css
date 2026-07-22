@@ -5,13 +5,13 @@
 @tailwind utilities;
 
 :root {
-  --primary-color: #2563eb;
-  --primary-hover: #1d4ed8;
-  --background-color: #f8fafc;
+  --primary-color: #0d9488;
+  --primary-hover: #0f766e;
+  --background-color: #f0fdfa;
   --surface-color: #ffffff;
-  --text-primary: #0f172a;
-  --text-secondary: #475569;
-  --border-color: #e2e8f0;
+  --text-primary: #134e4a;
+  --text-secondary: #0f766e;
+  --border-color: #ccfbf1;
   --error-color: #ef4444;
   --success-color: #10b981;
 }

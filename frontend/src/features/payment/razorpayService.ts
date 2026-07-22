@@ -76,7 +76,7 @@ export async function openRazorpayCheckout(opts: CheckoutOptions): Promise<Payme
             amount,
             currency,
             order_id: orderId,
-            name: opts.name || 'Smart Marketplace',
+            name: opts.name || 'Vicinity',
             description: opts.description || 'Order Payment',
             theme: { color: '#2563eb' },
             prefill: {

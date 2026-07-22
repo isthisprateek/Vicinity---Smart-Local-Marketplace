@@ -41,7 +41,7 @@ export function Header() {
         <>
             <header className="header">
                 <div className="container header-content">
-                    <Link to="/" className="logo" onClick={closeMenu}>Smart Marketplace</Link>
+                    <Link to="/" className="logo" onClick={closeMenu}>Vicinity</Link>
 
                     {/* Desktop nav */}
                     <nav className="nav">

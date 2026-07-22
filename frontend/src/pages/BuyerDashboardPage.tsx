@@ -114,7 +114,7 @@ export function BuyerDashboardPage() {
                 {/* ─── Header ─── */}
                 <div className="dashboard-header">
                     <h1>Good day, {firstName} 👋</h1>
-                    <p>Here's your personalised Smart Marketplace hub.</p>
+                    <p>Here's your personalised Vicinity hub.</p>
                 </div>
 
                 {/* ─── Delivery Location ─── */}

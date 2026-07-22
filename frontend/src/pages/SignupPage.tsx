@@ -44,9 +44,9 @@ export function SignupPage() {
     return (
         <div className="auth-page">
             <div className="auth-card">
-                <div className="auth-logo">SM</div>
+                <div className="auth-logo">V</div>
                 <h1 className="auth-title">Create your account</h1>
-                <p className="auth-subtitle">Join the Smart Marketplace in seconds</p>
+                <p className="auth-subtitle">Join Vicinity in seconds</p>
 
                 {/* Role toggle */}
                 <div className="role-toggle">

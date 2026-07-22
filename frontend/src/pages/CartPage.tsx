@@ -39,7 +39,7 @@ const SHOP_COLORS = ['#6366f1', '#f59e0b', '#ef4444', '#8b5cf6', '#06b6d4', '#ec
 const VALID_COUPONS: Record<string, { label: string; discount: number }> = {
     FIRST10: { label: '10% off your first order', discount: 0.10 },
     SAVE20: { label: '₹20 off', discount: 20 },
-    SMART15: { label: '15% off via Smart Marketplace', discount: 0.15 },
+    SMART15: { label: '15% off via Vicinity', discount: 0.15 },
 };
 
 interface ShopLocation {
@@ -216,7 +216,7 @@ export function CartPage() {
             amount: total,
             items,
             token,
-            name: 'Smart Marketplace',
+            name: 'Vicinity',
             description: `Order of ${itemCount} item${itemCount !== 1 ? 's' : ''}`,
             prefillName: user?.name || '',
             prefillEmail: user?.email || '',
